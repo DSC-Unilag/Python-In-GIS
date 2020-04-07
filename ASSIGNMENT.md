@@ -12,3 +12,7 @@ Print the data following the format
 * Print the email
 * If the person is under 18, tell them they are a minor and print their age, if they are more than 18 just print the age
 * Print the phone number
+
+Submit your assignment via this link: 
+https://docs.google.com/forms/d/e/1FAIpQLScIzyEOmoHaTFTLEnFVs6F2K45DyAqXhPeQyH-fBjCM7bN9pA/viewform
+P.S: Attach the repl.it link to your assignment 
