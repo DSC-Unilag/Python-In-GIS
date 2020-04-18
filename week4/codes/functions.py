@@ -91,8 +91,26 @@ print(mydoubler(11)) # 121, 11 is the value assigned to a
 print(mytripler(11)) # 1331, 11 is the value assigned to a
 
 ## MAP FUNCTION
+## You'll notice that I'm using the list function before printing, this is because map returns a map object
+
 def myfunc(n):
   return len(n)
 
 x = map(myfunc, ('apple', 'banana', 'cherry'))
+print(x) # <map object at 0x016B3050>
 print(list(x)) # [5, 6, 6]
+
+def myfunc(a, b):
+  return a + b
+
+x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
+print(x) # <map object at 0x016B3090>
+print(list(x)) # ['appleorange', 'bananalemon', 'cherrypineapple']
+
+## ZIP FUNCTION
+numbers = [1, 2, 3]
+letters = ['a', 'b', 'c']
+zipped = zip(numbers, letters)
+print(zipped)  # Holds an iterator object <zip object at 0x7fa4831153c8>
+print(type(zipped)) # <class 'zip'>
+print(list(zipped)) # [(1, 'a'), (2, 'b'), (3, 'c')]
