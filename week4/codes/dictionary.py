@@ -76,3 +76,45 @@ print(len(thisdict))
 thisdict = {"brand": "Ford","model": "Mustang","year": 1964}
 thisdict["color"] = "red"
 print(thisdict)
+
+#Creating a new dictionary and adding a new key: value pair to it
+thisdict = {"brand": "Ford","model": "Mustang","year": 1964}
+thisdict["color"] = "red"
+print(thisdict) # {"brand": "Ford","model": "Mustang","year": 1964, "color": "red"}
+
+# Looping through our dictionary
+for key in thisdict: # This loops through alll the key 
+  print(key, thisdict[key]) 
+# Output ---
+# brand, Ford
+# model, Mustang
+# year, 1964
+# color, red
+
+# Looping through the key and values
+  # Turns the dictionary to a list of tuple where each tuple is a key value pair
+for key, value in thisdict.items():
+  print(key, value)
+# Output ---
+# brand, Ford
+# model, Mustang
+# year, 1964
+# color, red
+
+# Looping through the keys only
+for key in thisdict.keys():
+    print(key)
+# Output ---
+# brand
+# model
+# year
+# color
+
+# Looping through the values only
+for value in thisdict.values():
+    print(value)
+# Output ---
+# Ford
+# Mustang
+# 1964
+# red
