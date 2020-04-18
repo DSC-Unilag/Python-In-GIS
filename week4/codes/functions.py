@@ -93,16 +93,8 @@ print(mytripler(11)) # 1331, 11 is the value assigned to a
 ## MAP FUNCTION
 ## You'll notice that I'm using the list function before printing, this is because map returns a map object
 
-def myfunc(n):
-  return len(n)
 
-x = map(myfunc, ('apple', 'banana', 'cherry'))
-print(x) # <map object at 0x016B3050>
-print(list(x)) # [5, 6, 6]
-
-def myfunc(a, b):
-  return a + b
-
+myfunc = lambda a, b: a + b
 x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
 print(x) # <map object at 0x016B3090>
 print(list(x)) # ['appleorange', 'bananalemon', 'cherrypineapple']
@@ -114,3 +106,19 @@ zipped = zip(numbers, letters)
 print(zipped)  # Holds an iterator object <zip object at 0x7fa4831153c8>
 print(type(zipped)) # <class 'zip'>
 print(list(zipped)) # [(1, 'a'), (2, 'b'), (3, 'c')]
+
+## FILTER FUNCTION
+number_list = range(-5, 5)
+less_than_zero = list(filter(lambda x: x < 0, number_list))
+print(less_than_zero) # [-5, -4, -3, -2, -1]
+
+## REDUCE FUNCTION
+product = 1
+list = [1, 2, 3, 4]
+for num in list:
+    product = product * num
+print(product) # product = 24
+
+from functools import reduce
+product = reduce((lambda x, y: x * y), [1, 2, 3, 4])
+print(product) # Output: 24
