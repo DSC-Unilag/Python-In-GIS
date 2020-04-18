@@ -37,6 +37,6 @@ print(my_gender) #My Gender
 you can assign all your variables to the list instead
 because the list has 3 elements, python knows what to do
 '''
-name, gender, age = my_first_l
+name, gender, age = my_first_list
 
 print(my_first_list) #['My Name', 'My Gender', 'My Age']
