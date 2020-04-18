@@ -36,6 +36,7 @@ my_function("Brazil")# I am from Brazil
 
 # Return Values
 # To let a function return a value, use the return statement
+
 def my_function(x):
   return 5 * x
 
@@ -67,3 +68,31 @@ tri_recursion(6)
 # 10
 # 15
 # 21
+
+### LAMBDA FUNCTIONS
+# A lambda function that adds 10 to the number passed in as an argument, and print the result:
+x = lambda a : a + 10
+print(x(5)) # 15
+print(x(4)) # 14
+
+# A lambda function can have more than 1 argument
+x = lambda a, b : a * b
+print(x(5, 6)) # 30
+print(x(11, 7)) # 77
+
+def myfunc(n):
+  return lambda a : a ** n
+
+mydoubler = myfunc(2) # 2 is the argument of myfunc
+mytripler = myfunc(3) # 3 is the argument of myfunc
+
+
+print(mydoubler(11)) # 121, 11 is the value assigned to a
+print(mytripler(11)) # 1331, 11 is the value assigned to a
+
+## MAP FUNCTION
+def myfunc(n):
+  return len(n)
+
+x = map(myfunc, ('apple', 'banana', 'cherry'))
+print(list(x)) # [5, 6, 6]
