@@ -62,6 +62,9 @@ def tri_recursion(k):
 print("\n\nRecursion Example Results")
 tri_recursion(6) 
 # Output ---
+
+
+# Recursion Example Results
 # 1
 # 3
 # 6
