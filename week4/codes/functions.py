@@ -19,7 +19,7 @@ my_function2("Emil", "Refsnes") # Emil Refsnes
 
 # If you try to call the function with 1 or 3 arguments, you will get an error:
 
-def my_function3(fname, lname):
+def my_function_(fname, lname):
   print(fname + " " + lname)
 
 # my_function("Emil") # TypeError: my_function() missing 1 required positional argument: 'lname'
