@@ -12,22 +12,27 @@ print(int(KelvinToFahrenheit(505.78))) # 451
 #     assert (Temperature >= 0),"Colder than absolute zero!"
 # AssertionError: Colder than absolute zero!
 
-def mult():
+def mult(num: int) -> int:
     '''
     A function named mult that multiplies a number by 10
 
-    Parameters: None
+    Parameters: num:-- int
+                Number to be multiplied by 10
     
-    Returns 10 * the input of the user.
+    Returns 10 * num.
     
     @author: Babatunde Koiki
     
     Created on: 21-04-2020
     '''
     try:
-    inp = int(input('Enter an Integer: '))
-    
-    except TypeError:
-    print("Error: Invalid input, Input should be  integer")
+        num = int(num)
+    except:
+        return "Error: Invalid input, Input should be  integer"
     else:
-    print(inp * 10)
+        return 10 * num
+
+print(mult(10)) # 100
+print(mult('Babatunde')) # Error: Invalid input, Input should be  integer
+print(mult([1, 2, 3, 4])) # Error: Invalid input, Input should be  integer
+print(mult(20)) # 200
