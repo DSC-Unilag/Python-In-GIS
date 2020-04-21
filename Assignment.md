@@ -36,3 +36,7 @@ Sample Case 0: n = 3</br>
  * n is odd and odd numbers are weird, so we print Weird.</br>
 Sample Case 1: n = 24</br>
  * n  > 20 and n is even, so it isn't weird. Thus, we print Not Weird.</br>
+ 
+ Submit your assignment via this link: 
+https://docs.google.com/forms/d/e/1FAIpQLScIzyEOmoHaTFTLEnFVs6F2K45DyAqXhPeQyH-fBjCM7bN9pA/viewform
+P.S: Attach the repl.it link to your assignment</br>
