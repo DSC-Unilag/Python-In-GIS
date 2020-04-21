@@ -19,4 +19,20 @@ P.S: Attach the repl.it link to your assignment</br>
 
 # 2nd Assignment
 
-coming soon
+Objective
+In this challenge, we're getting started with conditional statements.
+
+Task
+Given an integer, n, perform the following conditional actions:
+
+If n is odd, print Weird</br>
+If n is even and in the inclusive range of 2 to 5, print Not Weird</br>
+If n is even and in the inclusive range of 6 to 20, print Weird</br>
+If n is even and greater than 20, print Not Weird</br>
+
+### Explanation
+
+Sample Case 0: n = 3</br>
+ * n is odd and odd numbers are weird, so we print Weird.</br>
+Sample Case 1: n = 24</br>
+ * n  > 20 and n is even, so it isn't weird. Thus, we print Not Weird.</br>
