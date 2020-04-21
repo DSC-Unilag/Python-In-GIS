@@ -1,4 +1,12 @@
-def KelvinToFahrenheit(Temperature):
+def KelvinToFahrenheit(Temperature: float) -> float:
+    '''
+    A function that takes in a temperature valu in Kelvin and converts it to Fahrenheit
+
+    Parameter: Temperature: Float or int
+                            Temperature in Kelvin
+
+    Returns: The temperature in Fahrenheit or Assertion Error if Temperature is lower than 0
+    '''
    assert (Temperature >= 0),"Colder than absolute zero!"
    return ((Temperature-273)*1.8)+32
 
@@ -19,11 +27,7 @@ def mult(num: int) -> int:
     Parameters: num:-- int
                 Number to be multiplied by 10
     
-    Returns 10 * num.
-    
-    @author: Babatunde Koiki
-    
-    Created on: 21-04-2020
+    Returns 10 * num
     '''
     try:
         num = int(num)
