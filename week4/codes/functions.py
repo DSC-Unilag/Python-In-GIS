@@ -4,51 +4,51 @@ def my_function():
 my_function() # Hello from a function
 
 # Adding Parameters to our Function
-def my_function(fname):
+def my_function1(fname):
     print(fname + " Refsnes")
 
-my_function("Emil") # Emil Refsnes
-my_function("Tobias") # Tobias Refsnes
-my_function("Linus") # Linus Refsnes
+my_function1("Emil") # Emil Refsnes
+my_function1("Tobias") # Tobias Refsnes
+my_function1("Linus") # Linus Refsnes
 
 # This function expects 2 arguments, and gets 2 arguments:
-def my_function(fname, lname):
+def my_function2(fname, lname):
     print(fname + " " + lname)
 
-my_function("Emil", "Refsnes") # Emil Refsnes
+my_function2("Emil", "Refsnes") # Emil Refsnes
 
 # If you try to call the function with 1 or 3 arguments, you will get an error:
 
-def my_function(fname, lname):
+def my_function3(fname, lname):
   print(fname + " " + lname)
 
 # my_function("Emil") # TypeError: my_function() missing 1 required positional argument: 'lname'
 
 # Default Parameter Value
 # If we call the function without argument, it uses the default value
-def my_function(country = "Norway"):
+def my_function3(country = "Norway"):
   print("I am from " + country)
 
-my_function("Sweden") # I am from Sweden
-my_function # I am from Norway
-my_function() # I am from Norway
-my_function("Brazil")# I am from Brazil
+my_function3("Sweden") # I am from Sweden
+my_function3() # I am from Norway
+my_function3() # I am from Norway
+my_function3("Brazil")# I am from Brazil
 
 # Return Values
 # To let a function return a value, use the return statement
 
-def my_function(x):
+def my_function4(x):
   return 5 * x
 
-print(my_function(3)) # 15
-print(my_function(5)) # 25
-print(my_function(9)) # 45
+print(my_function4(3)) # 15
+print(my_function4(5)) # 25
+print(my_function4(9)) # 45
 
 # Pass Statement
 # function definitions cannot be empty, but if you for some reason have a function definition 
 # with no content, put in the pass statement to avoid getting an error
 
-def myfunction():
+def myfunction5():
   pass
 
 def tri_recursion(k):
