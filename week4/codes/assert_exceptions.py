@@ -40,3 +40,28 @@ print(mult(10)) # 100
 print(mult('Babatunde')) # Error: Invalid input, Input should be  integer
 print(mult([1, 2, 3, 4])) # Error: Invalid input, Input should be  integer
 print(mult(20)) # 200
+
+
+def divide(num_1: int, num_2: int) -> int:
+    '''
+    A function named divide that divides two numbers and return the results
+
+    Parameters: num_1:-- int
+                    The numerator
+               num_2: int
+                    The denominator
+    
+    Returns num_1/ num_2
+    '''
+    try:
+        num_1 = int(num)
+        num_2 - int()
+    except:
+        return "Error: Invalid input, Input should be  integer"
+    else:
+        return 10 * num
+
+print(mult(10)) # 100
+print(mult('Babatunde')) # Error: Invalid input, Input should be  integer
+print(mult([1, 2, 3, 4])) # Error: Invalid input, Input should be  integer
+print(mult(20)) # 200
