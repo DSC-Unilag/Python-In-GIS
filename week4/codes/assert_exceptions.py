@@ -26,8 +26,8 @@ def mult(num: int) -> int:
 
     Parameters: num:-- int
                 Number to be multiplied by 10
-    
-    Returns 10 * num
+        
+    Returns 10 * num if input is a number, else returns "Invalid input, input should be an integer"
     '''
     try:
         num = int(num)
