@@ -81,9 +81,22 @@ def add(a: int, b: int) -> int:
         return f"Function takes two arguments, I'll assume that your other argument is 0. sum of {a} and 0 is {a}"
     else:
         return f"Sum of {a} and {b} is {c}"
+def add(a: int, b: int) -> int:
+    try:
+        a = float(a)
+        b = float(b)
+        c = a + b
+        c = round(c, 3)
+    except TypeError:
+        return "Function takes two arguments, I'll assume that your other argument is 0. sum of {a} and 0 is {a}"
+    except ValueError:
+        return f"Input should be integer"
+    else:
+        return f"Sum of {a} and {b} is {c}"
 
 print(add(1, 2))
 print(add(4.6, 7.8))
-print(add(4.56))
+print(add(4.56, [1]))
+
 
 
