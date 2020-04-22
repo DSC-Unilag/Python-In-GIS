@@ -7,8 +7,8 @@ def KelvinToFahrenheit(Temperature: float) -> float:
 
     Returns: The temperature in Fahrenheit or Assertion Error if Temperature is lower than 0
     '''
-   assert (Temperature >= 0),"Colder than absolute zero!"
-   return ((Temperature-273)*1.8)+32
+    assert (Temperature >= 0),"Colder than absolute zero!"
+    return ((Temperature-273)*1.8)+32
 
 print(KelvinToFahrenheit(273)) # 32.0
 print(int(KelvinToFahrenheit(505.78))) # 451
@@ -51,17 +51,20 @@ def divide(num_1: int, num_2: int) -> int:
                num_2: int
                     The denominator
     
-    Returns num_1/ num_2
+    Returns num_1/ num_2 if num_2 is 0 returns "num_2 can't be 0", else returns "Invalid Input"
     '''
     try:
-        num_1 = int(num)
-        num_2 - int()
+        num_1 = int(num_1)
+        num_2 = int(num_2)
+        res = num_1 / num_2
+    except ZeroDivisionError: # if denominator is 0
+        return "denominator can't be 0"
     except:
         return "Error: Invalid input, Input should be  integer"
     else:
-        return 10 * num
+        return res
 
-print(mult(10)) # 100
-print(mult('Babatunde')) # Error: Invalid input, Input should be  integer
-print(mult([1, 2, 3, 4])) # Error: Invalid input, Input should be  integer
-print(mult(20)) # 200
+print(divide(10, 5)) # 100
+print(divide('Babatunde', 3)) # Error: Invalid input, Input should be  integer
+print(divide([1, 2, 3, 4], 12)) # Error: Invalid input, Input should be  integer
+print(divide(20, 0)) # denominator can't be 0
