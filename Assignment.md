@@ -1,6 +1,6 @@
 # 1st Assignment
 
-Write a program that asks the user for their name, age, email and phone number
+Write a program that asks the user for their name, age, email and phone number.
 
 * Ensure the name only contains alphabets and/or whitespace for writing more than one name
 * Ensure that the email contains a @ and . character
