@@ -68,3 +68,22 @@ print(divide(10, 5)) # 100
 print(divide('Babatunde', 3)) # Error: Invalid input, Input should be  integer
 print(divide([1, 2, 3, 4], 12)) # Error: Invalid input, Input should be  integer
 print(divide(20, 0)) # denominator can't be 0
+
+def add(a: int, b: int) -> int:
+    try:
+        a = float(a)
+        b = float(b)
+        c = a + b
+        c = round(c, 3)
+    except TypeError:
+        return "Input should be integer"
+    except ValueError:
+        return f"Function takes two arguments, I'll assume that your other argument is 0. sum of {a} and 0 is {a}"
+    else:
+        return f"Sum of {a} and {b} is {c}"
+
+print(add(1, 2))
+print(add(4.6, 7.8))
+print(add(4.56))
+
+
