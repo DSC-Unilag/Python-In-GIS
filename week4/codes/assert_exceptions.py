@@ -88,5 +88,16 @@ print(add(4.6, 7.8)) # Sum of 4.6 and 7.8 is 12.4
 print(add(4.56, [1])) # Input should be integer now
 print(add('a', 'b')) # Input should be integer
 
+def sub(a, b):
+    try:
+        c = a - b
+    except Exception as e: # e is the error message.
+        return "Invalid Input. "+str(e).capitalize()
+    else:
+        return c
+
+print(sub(1, 2)) # -1
+print(sub(1, 'a')) # Invalid Input. Unsupported operand type(s) for +: 'int' and 'str'
+
 
 
