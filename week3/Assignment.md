@@ -53,9 +53,9 @@ Given an integer, n, print its first 10 multiples. Each multiple n * i (where 1 
 
 A single integer, n.
 
-Sample Input</br>
+### Sample Input
 2
-
+ 
 ### Sample Output
 
 2 x 1 = 2</br>
@@ -68,3 +68,6 @@ Sample Input</br>
 2 x 8 = 16<br/>
 2 x 9 = 18<br/>
 2 x 10 = 20<br/>
+Submit your assignment via this link: 
+https://docs.google.com/forms/d/e/1FAIpQLScIzyEOmoHaTFTLEnFVs6F2K45DyAqXhPeQyH-fBjCM7bN9pA/viewform
+P.S: Attach the repl.it link to your assignment</br>
