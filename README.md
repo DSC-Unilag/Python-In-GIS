@@ -3,4 +3,4 @@
 [Week 2 Slide](https://drive.google.com/open?id=1zMaX9b4dp6YJrNLCxXpVtIQiyxUDUA89HwigTp0WfP4)<br>
 [Week 3 Slide](https://drive.google.com/open?id=1tsnSxa7BHnQHzATc404dbSXgBOOm_VKMr7pEMf5MXGE)</br>
 [Week 4 Slide](https://docs.google.com/presentation/d/1nK5o1xFG65hdRgbR0jV4x7ZisRIllugOmVrZsbvlQeU/edit?usp=sharing)</br>
-[https://youtu.be/1a-bx-owdRI](Live video link to the last online class)</br>
+[https://youtu.be/1a-bx-owdRI] (Live video link to the last online class)</br>
